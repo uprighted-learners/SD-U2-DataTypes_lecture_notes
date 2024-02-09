@@ -13,7 +13,7 @@ There are two different branches associated with this lesson.
 ### What Should Already Be Understood
 - Basic HTML / CSS concepts
 - Variables and structure
-- Nodemon
+- Node
 
 ## Files / Folders Provided in this Lesson
 - `index.js`

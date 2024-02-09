@@ -8,16 +8,28 @@
 /* 
     - True / False 
 */
+let on = true;
+console.log(on);
+let off = false;
+console.log(off);
 
 //! Null
 /* 
     - An empty value.
 */
 
+let empty = null;
+console.log(empty);
+
 //! Undefined
 /* 
     - no value
 */
+let undef = undefined; // instead of assigning our undef variable a datatype of undefined, we can simply just declare the variable.
+console.log(undef);
+
+let correct;
+console.log(correct);
 
 //! Null vs Undefined
 /* 
@@ -32,6 +44,24 @@
     - Consider the MDN docs (resource link in ReadMe.md) for a deeper dive.
 */
 
+let degrees = 90;
+console.log(degrees);
+
+let precise = 999999999999999; // 15 9's
+console.log(precise);
+
+let rounded = 9999999999999999; // 16 9's
+console.log(rounded); // JS gives you space for 15 numbers before it rounds up.
+
+let notQuite = 0.2 + 0.1;
+console.log(notQuite);
+
+let numbersAreHard = (0.2 * 10 + 0.1 *10) / 10;
+console.log(numbersAreHard);
+
+let a = Number('123')
+console.log(a);
+
 //! String
 /* 
     - Represents text.
@@ -40,6 +70,21 @@
         Double-quotes:  "text"
         Back-tic:       `text`
 */
+
+let stringOne = "double quotes";
+let stringTwo = 'single quotes';
+let stringThree = `tics`;
+
+console.log(stringOne, stringTwo, stringThree);
+
+//* Numbers vs Strings
+let first = 1234 + 567;
+let second = '1234' + '567';
+console.log(first);
+console.log(second);
+
+console.log(typeof first);
+console.log(typeof second);
 
 //! Object
 /* 
@@ -51,6 +96,14 @@
         key: value
     }
 */
+
+let frodo = {
+    race: 'hobbit',
+    rings: 1,
+    cloak: true
+}
+
+console.log(frodo);
 
 //! Array
 /* 
@@ -68,13 +121,43 @@
         - arrays are also containers that hold multiple datatypes.
 */
 
+let burritos = ['large', 4, true];
+console.log(burritos);
+console.log(typeof burritos);
+console.log(burritos instanceof Array);
+
 //! Data Type Literals
 /*  
     - Literal representation of a fixed value when created.
 */
+//String Literal
+let car = "Ford";
+
+//Numeric Literal
+let december = 12;
+
+//Boolean Literal
+let tired = true;
+
+//Object Literal
+let soups = {
+    a: "chicken noodle",
+    b: 'tomato',
+    c: 'beef and barley'
+};
+
+//Array Literal
+let days = ['M','T','W','TH','F','S','S'];
+
 
 //! Special Values
 /* 
     - NaN: Not a Number
     - Infinity
 */
+
+let inf = 5 / 0;
+console.log(inf);
+
+let notANumber = 'string' * 317;
+console.log(notANumber);
